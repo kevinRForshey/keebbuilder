@@ -1,7 +1,7 @@
 import typer
-
-from keebbuilder.domain.models import KeyboardSize, SoundProfile, KeyboardSwitches
+from keebbuilder.domain.models import KeyboardSize, BuildPreferences, SoundProfile, KeyboardSwitches
 from keebbuilder.domain.sound_profiles import recommended_case_materials
+from keebbuilder.services.build_service import recommend_build
 
 app = typer.Typer()
 

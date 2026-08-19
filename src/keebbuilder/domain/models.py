@@ -30,12 +30,6 @@ class KeyboardSwitches(str, Enum):
     CLICKY = "clicky"
     
 @dataclass(frozen=True)
-class KeyboardSwitches(str, Enum):
-    LINEAR = "linear"
-    TACTILE = "tactile"
-    CLICKY = "clicky"
-    
-@dataclass(frozen=True)
 class Switch:
     name: str
     manufacturer: str
@@ -45,12 +39,12 @@ class Switch:
 class BuildPreferences:
     sound_profile: SoundProfile
     keyboard_size: KeyboardSize
-    case_material: CaseMaterial
-    switches: KeyboardSwitches
+    switch_type: KeyboardSwitches
     
 @dataclass(frozen=True)
 class BuildRecommendation: 
     case_materials: list[CaseMaterial]
     switches: list[Switch]
+    switch_type: list[KeyboardSwitches]
 
 
