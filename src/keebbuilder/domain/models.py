@@ -45,5 +45,6 @@ class BuildPreferences:
 class BuildRecommendation: 
     case_materials: list[CaseMaterial]
     switches: list[Switch]
+    switch_type: list[KeyboardSwitches]
 
 
